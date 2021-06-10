@@ -7,7 +7,7 @@ namespace Clean.Shut.Down.Web.Api
 {
     public class ApplicationLifetimeHostedService : IHostedService  
         {
-            private readonly IApplicationLifetime _applicationLifetime;
+            private readonly IHostApplicationLifetime _applicationLifetime;
             private readonly ILogger<ApplicationLifetimeHostedService> _logger;
             public ApplicationLifetimeHostedService(
                 ILogger<ApplicationLifetimeHostedService> logger,   
